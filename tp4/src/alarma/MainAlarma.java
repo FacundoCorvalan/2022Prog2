@@ -4,7 +4,7 @@ package alarma;
 
 public class MainAlarma {
 
-    public static void main(String[] args) {
+    public static void mai(String[] args) {
         Alarma a1 = new Alarma();
         
         System.out.println("|Alarma comun|");
