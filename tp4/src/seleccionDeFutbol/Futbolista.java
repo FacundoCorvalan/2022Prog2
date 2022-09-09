@@ -1,14 +1,15 @@
 
 package seleccionDeFutbol;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 
 
 public class Futbolista extends Persona{
     String posicion, pie;
     int cantGoles;
     
-    public Futbolista(String n,String a,int nroP, LocalDateTime f, String pos,String pie,int cant){
+    public Futbolista(String n,String a,int nroP, LocalDate f, String pos,String pie,int cant){
         super(n, a, nroP, f);
         this.posicion = pos;
         this.pie = pie;
@@ -33,5 +34,11 @@ public class Futbolista extends Persona{
         this.cantGoles = cantGoles;
     }
     
-    
+    @Override
+    public String mostrarDatos(){
+        return super.mostrarDatos() +
+                "\nPosicion: "+this.getPosicion()+
+                "\n"+this.getPie()+
+                "\nCant Goles: "+this.getCantGoles();
+    }
 }

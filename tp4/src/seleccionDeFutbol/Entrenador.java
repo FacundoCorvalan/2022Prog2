@@ -1,13 +1,13 @@
 
 package seleccionDeFutbol;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 
 public class Entrenador extends Persona {
     private int id;
     
-    public Entrenador(String n,String a, int nroP, LocalDateTime f,int id){
+    public Entrenador(String n,String a, int nroP, LocalDate f,int id){
         super(n, a, nroP, f);
         this.id = id;
     }
@@ -16,5 +16,8 @@ public class Entrenador extends Persona {
         return id;
     }
     
-    
+    public String mostrarDatos(){
+        return super.mostrarDatos()+
+                "Id de la federacion: "+this.getId();
+    }
 }
