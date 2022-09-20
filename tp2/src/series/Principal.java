@@ -1,11 +1,19 @@
 
 
 public class Principal {
-    public static void min(String[] args) {
+    public static void man(String[] args) {
         Episodio e1 = new Episodio("ep1", "cap1");
         Episodio e2 = new Episodio("ep2", "cap2");
         Episodio e3 = new Episodio("ep3", "cap3");
         Episodio e4 = new Episodio("ep4", "cap4");
+        
+        
+        
+        System.out.println("AQUII11111");
+        e1.x();
+        
+        
+        
         
         e1.setFlag(true);
         e3.setFlag(true);
